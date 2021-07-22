@@ -1,3 +1,4 @@
+import os
 # setup the word and hidden list
 word = list("apple")
 hidden = []
@@ -10,6 +11,7 @@ max_attempts = 8
 # loop until either the player has won or lost
 isGameOver = False
 while not isGameOver:
+    os.system('cls' if os.name == 'nt' else 'clear')
     # display the current board, guessed letters, and attempts remaining
     print(f"You have {max_attempts - attempts} attempts remaining")
 
@@ -18,9 +20,9 @@ while not isGameOver:
     print("     ------")
     print("     |    |")
     print("     |    " + ("O" if attempts > 0 else ""))
-    print("     |    " + ("/\\" if attempts > 1 else ""))
+    print("     |   " + ("/|\\" if attempts > 1 else ""))
     print("     |    " + ("|" if attempts > 2 else ""))
-    print("     |    " + ("/\\" if attempts > 3 else ""))
+    print("     |   " + ("/ \\" if attempts > 3 else ""))
     print(" --------")
 
     # ask the player for a character

@@ -4,6 +4,7 @@ import os
 valid_characters = "abcdefghijklmnopqrstuvwxyz"
 
 # this is a comment
+# this is a comment2
 
 #-----------MAIN
 def main():

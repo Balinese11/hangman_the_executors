@@ -3,6 +3,7 @@ import os
 
 valid_characters = "abcdefghijklmnopqrstuvwxyz"
 
+# this is a comment
 
 #-----------MAIN
 def main():
